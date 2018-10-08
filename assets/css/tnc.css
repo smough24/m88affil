@@ -1,0 +1,158 @@
+.tnc-page {
+    background: #a9b6d9;
+}
+
+.tnc-container {
+    font-size: 0;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.tnc-column {
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    vertical-align: top;
+    background: #fff;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.tnc-column-subinfo {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.tnc-column-single {
+	margin-bottom: 3px;
+}
+
+.tnc-column-title {
+    line-height: 1;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+    display: block;
+    color: #283f65;
+    text-align: center;
+}
+.tnc-title {
+    display: block;
+    background: #283f65;
+    padding: 10px 40px;
+    color: #fff;
+    letter-spacing: 1px;
+    position: relative;
+    cursor: pointer;
+}
+
+.active-tnc .tnc-title {
+	pointer-events: none;
+}
+
+.active-tnc .tnc-title::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/opened-faq.png);
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translate(0, -50%);
+}
+
+.tnc-title::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/unopened-faq.png);
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translate(0, -50%);
+}
+
+.tnc-submenu {
+    padding: 20px;
+}
+
+.tnc-sub-single {
+    padding-bottom: 20px;
+}
+
+.tnc-sub-single:last-child {
+    padding: 0;
+}
+
+.tnc-sub-title {
+    font-weight: bold;
+    display: block;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    padding-left: 20px;
+}
+
+.tnc-sub-title::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 10px;
+    border-color: transparent transparent transparent #e31837;
+    transition: 200ms ease-in-out;
+    -webkit-transition: 200ms ease-in-out;
+    -moz-transition: 200ms ease-in-out;
+}
+
+.active-sub-tnc .tnc-sub-title::before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.tnc-sub-content {
+    margin-top: 10px;
+	margin-left: 20px;
+}
+
+@media (max-width: 800px) {
+
+	.tnc-container {
+		width: 90%;
+	}
+
+	.tnc-column {
+		background: transparent;
+		padding: 0;
+	}
+	
+	.tnc-column-subinfo {
+		text-align: left;
+	}
+
+	.tnc-column-cont {
+		background: #fff;
+		padding: 20px;
+	}
+
+}
+
+@media (min-width: 801px) and (max-width: 1200px) {
+
+	.tnc-container {
+		width: 90%;
+	}
+	
+	.tnc-column {
+		padding: 30px;
+	}
+	
+}
