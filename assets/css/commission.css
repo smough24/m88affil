@@ -1,0 +1,18 @@
+@charset "utf-8";
+.banner {
+	background: #0c1526;
+	text-align: center;
+}
+.content .register-btn {
+	background: #ffc901;
+	color: #000;
+	display: inline-block;
+	vertical-align: middle;
+	width: 400px;
+	height: 47px;
+	text-align: center;
+	line-height: 47px;
+	font-size: 16px;
+	font-family: 'avantgardecedemi';
+	margin-top: 20px;
+}

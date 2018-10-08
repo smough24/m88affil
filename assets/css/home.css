@@ -1,1 +1,483 @@
 @charset "utf-8";
+#container > div:nth-child(odd),
+#container > div:nth-child(odd) h2,
+#container > div:nth-child(odd) p {
+	color: #FFF;
+}
+.banner {
+	background: #0c1526;
+	text-align: center;
+}
+.box-holder {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+.get-started .blurb {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #1a2333;
+	border-radius: 999px;
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: 0 auto 30px;
+}
+.get-started .blurb-reg {
+	background-image: url(../images/home/register-icon.png);
+	background-size: 43px 53px;
+}
+.get-started .blurb-refer {
+	background-image: url(../images/home/refer-icon.png);
+	background-size: 66px 58px;
+}
+.get-started .blurb-money {
+	background-image: url(../images/home/money-icon.png);
+	background-size: 64px 41px;
+}
+.about-us .inner {
+	max-width: 980px;
+}
+.about-us h2 {
+	margin-bottom: 25px;
+}
+.about-us p {
+	font-size: 22px;
+	line-height: 32px;
+}
+.our-products ul {
+	display: block;
+	list-style: none;
+	margin: 40px auto 0;
+	padding: 0 10px;
+	font-size: 0;
+}
+.our-products ul li {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0 5px;
+	width: 20%;
+	box-sizing: border-box;
+}
+.our-products .box {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
+.our-products .box p {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.7);
+	text-align: center;
+	line-height: 50px;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 20px;
+	color: #FFF;
+	margin: 0;
+}
+.why-choose-us .box-blurbs strong {
+	font-size: 24px;
+	font-family: avantgardecedemi;
+}
+.why-choose-us .blurb {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #FFF;
+	border-radius: 999px;
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: 0 auto 10px;
+}
+.why-choose-us .blurb-time {
+	background-image: url(../images/home/time-icon.png);
+	background-size: 62px 62px;
+}
+.why-choose-us .blurb-report {
+	background-image: url(../images/home/report-icon.png);
+	background-size: 57px 46px;
+}
+.why-choose-us .blurb-gear {
+	background-image: url(../images/home/gear-icon.png);
+	background-size: 73px 67px;
+}
+@media (min-width: 751px) {
+	.banner .banner-img {
+		background-image: url(../images/home/banner.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+		height: 450px;
+		width: 100%;
+	}
+	.banner .register-btn {
+		display: none;
+		font-size: 0;
+	}
+	.get-started {
+		background-image: url(../images/home/get-started-bg.jpg);
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		text-align: center;
+		height: 350px;
+		line-height: 350px;
+	}
+	.get-started .inner {
+		position: relative;
+	}
+	.get-started .inner:before {
+		content: "";
+		display: block;
+		height: 1px;
+		width: 67%;
+		background: #1a2333;
+		position: absolute;
+		left: 50%;
+		top: 140px;
+		transform: translateX(-50%);
+	}
+	.get-started .box-row {
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+		position: relative;
+		margin-top: 30px;
+	}
+	.get-started .box-col {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.get-started .box-col strong {
+		display: block;
+		margin-bottom: 10px;
+	}
+	.about-us {
+		background-image: url(../images/home/about-bg.jpg);
+		background-color: #19233b;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		text-align: center;
+		height: 350px;
+		line-height: 350px;
+	}
+	.about-us .box-col {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: left;
+	}
+	.about-us .box-col1 {
+		width: 360px;
+		text-align: center;
+	}
+	.our-products {
+		background-image: url(../images/home/our-products-bg.jpg);
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		text-align: center;
+		height: 414px;
+		line-height: 414px;
+	}
+	.why-choose-us {
+		background-image: url(../images/home/why-choose-us.jpg);
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		text-align: center;
+		height: 551px;
+		line-height: 551px;
+		padding-bottom: 50px;
+	}
+	.why-choose-us .list-boxes {
+		margin: 30px 0;
+		padding: 40px;
+		border: 2px solid #FFF;
+	}
+	.why-choose-us ul {
+		display: table-cell;
+		vertical-align: top;
+		list-style: none;
+		text-align: left;
+		font-size: 22px;
+		margin: 0;
+		padding: 0;
+	}
+	.why-choose-us ul:not(:last-child) {
+		padding-right: 40px;
+	}
+	.why-choose-us ul li:not(:last-child) {
+		margin-bottom: 10px;
+	}
+	.why-choose-us ul li:before {
+		content: "-";
+		display: inline-block;
+		margin-right: 5px;
+	}
+	.why-choose-us .box-blurbs {
+		display: table;
+		width: 100%;
+	}
+	.why-choose-us .box-blurbs .box-col {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+@media (max-width: 750px) {
+	body {
+		font-size: 23px;
+		line-height: 29px;
+	}
+	p {
+		font-size: 23px;
+		line-height: 29px;
+	}
+	strong {
+		font-size: 25px;
+		line-height: 32px;
+	}
+	.banner .banner-img {
+		background-image: url(../images/home/banner-mobile.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+		height: 45.06666666666667vw;
+		width: 100%;
+	}
+	.banner .register-btn {
+		display: block;
+		background: #ffcf01;
+		color: #000;
+		font-size: 30px;
+		height: 90px;
+		line-height: 90px;
+		font-family: avantgardecedemi;
+	}
+	.get-started {
+		text-align: center;
+		padding: 35px 0;
+	}
+	.get-started .box-row {
+		margin-top: 35px;
+		position: relative;
+	}
+	.get-started .box-row:before {
+		content: "";
+		display: block;
+		height: 85%;
+		width: 2px;
+		background: #1a2333;
+		position: absolute;
+		left: 50px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.get-started .box-col:not(:last-child) {
+		margin-bottom: 30px;
+	}
+	.get-started .blurb {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0;
+		position: relative;
+	}
+	.get-started .aside-box {
+		display: inline-block;
+		vertical-align: middle;
+		text-align: left;
+		width: 280px;
+		padding-left: 45px;
+	}
+	.get-started .aside-box p {
+		margin: 0;
+	}
+	.about-us {
+		background-color: #19233b;
+		text-align: center;
+		padding: 30px 50px;
+	}
+	.about-us .box-col1 {
+		margin-bottom: 40px;
+	}
+	.about-us p {
+		font-size: 19px;
+		line-height: 28px;
+		margin: 0;
+	}
+	.our-products {
+		text-align: center;
+		padding: 30px;
+	}
+	.our-products h2 {
+		margin-bottom: 20px;
+	}
+	.our-products ul {
+		padding: 0;
+	}
+	.our-products ul li {
+		width: auto;
+		margin-bottom: 30px;
+	}
+	.why-choose-us {
+		background: #13182b;
+		padding: 30px;
+		text-align: center;
+	}
+	.why-choose-us h2 {
+		margin-bottom: 25px;
+	}
+	.why-choose-us .list-boxes {
+		display: none;
+	}
+	.why-choose-us .box-blurbs .box-col {
+		display: table;
+		width: 100%;
+		padding-bottom: 30px;
+	}
+	.why-choose-us .blurb, .why-choose-us .box-blurbs strong {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.why-choose-us .box-blurbs strong {
+		padding-left: 60px;
+	}
+}
+@media (max-width: 650px) {
+	body {
+		font-size: 3.5384615384615383vw;
+		line-height: 4.461538461538462vw;
+	}
+	p {
+		font-size: 3.5384615384615383vw;
+		line-height: 4.461538461538462vw;
+	}
+	strong {
+		font-size: 3.8461538461538463vw;
+		line-height: 4.923076923076923vw;
+	}
+	h1, h2, h3, h4, h5 {
+		font-size: 4.615384615384615vw;
+		line-height: 5.384615384615385vw;
+	}
+	.banner .register-btn {
+		font-size: 4.615384615384615vw;
+		height: 13.846153846153847vw;
+		line-height: 13.846153846153847vw;
+	}
+	.get-started {
+		padding: 5.384615384615385vw 0;
+	}
+	.get-started .box-row {
+		margin-top: 5.384615384615385vw;
+	}
+	.get-started .box-row:before {
+		width: 0.3076923076923077vw;
+		left: 7.6923076923076925vw;
+	}
+	.get-started .box-col:not(:last-child) {
+		margin-bottom: 4.615384615384615vw;
+	}
+	.get-started .aside-box {
+		width: 43.07692307692308vw;
+		padding-left: 6.923076923076923vw;
+	}
+	.get-started .blurb {
+		width: 15.384615384615385vw;
+		height: 15.384615384615385vw;
+	}
+	.get-started .blurb-reg {
+		background-size: 6.615384615384615vw 8.153846153846153vw;
+	}
+	.get-started .blurb-refer {
+		background-size: 10.153846153846153vw 8.923076923076923vw;
+	}
+	.get-started .blurb-money {
+		background-size: 9.846153846153847vw 6.3076923076923075vw;
+	}
+	.about-us {
+		padding: 4.615384615384615vw 7.6923076923076925vw;
+	}
+	.about-us .box-col1 {
+		margin-bottom: 6.153846153846154vw;
+	}
+	.about-us p {
+		font-size: 2.923076923076923vw;
+		line-height: 4.3076923076923075vw;
+	}
+	.our-products {
+		padding: 4.615384615384615vw;
+	}
+	.our-products h2 {
+		margin-bottom: 3.076923076923077vw;
+	}
+	.our-products ul li {
+		margin-bottom: 4.615384615384615vw;
+	}
+	.why-choose-us {
+		padding: 30px;
+	}
+	.why-choose-us h2 {
+		margin-bottom: 25px;
+	}
+	.why-choose-us .list-boxes {
+		display: none;
+	}
+	.why-choose-us .box-blurbs .box-col {
+		display: table;
+		width: 100%;
+		padding-bottom: 30px;
+	}
+	.why-choose-us .blurb, .why-choose-us .box-blurbs strong {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.why-choose-us .box-blurbs strong {
+		font-size: 3.6923076923076925vw;
+		padding-left: 9.23076923076923vw;
+	}
+	.why-choose-us .blurb {
+		width: 15.384615384615385vw;
+		height: 15.384615384615385vw;
+		margin: 0 auto 1.5384615384615385vw;
+	}
+	.why-choose-us .blurb-time {
+		background-size: 9.538461538461538vw 9.538461538461538vw;
+	}
+	.why-choose-us .blurb-report {
+		background-size: 8.76923076923077vw 7.076923076923077vw;
+	}
+	.why-choose-us .blurb-gear {
+		background-size: 11.23076923076923vw 10.307692307692308vw;
+	}
+}
+@media (max-width: 480px) {
+	p {
+		font-size: 16px;
+		line-height: 21px;
+	}
+	strong {
+		font-size: 18px;
+		line-height: 23px;
+	}
+	h2 {
+		font-size: 22px;
+		line-height: 25px;
+	}
+	.banner .register-btn {
+		font-size: 22px;
+		height: 66px;
+		line-height: 66px;
+	}
+	.about-us p {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.why-choose-us .box-blurbs strong {
+		font-size: 17px;
+		padding-left: 23px;
+	}
+}
