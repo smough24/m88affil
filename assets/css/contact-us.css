@@ -1,0 +1,215 @@
+.about-us-page {
+    background: #a9b6d9;
+}
+
+.contact-us-container {
+    font-size: 0;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.faq-column {
+    display: inline-block;
+    width: calc(65% - 40px);
+    font-size: 14px;
+    vertical-align: top;
+    background: #fff;
+    padding: 50px;
+    box-sizing: border-box;
+    margin-right: 40px;
+}
+
+.information-column {
+    display: inline-block;
+    width: 35%;
+    font-size: 14px;
+    vertical-align: top;
+    background-color: #5b729e;
+    color: #fff;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.information-column > div {
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 25px;
+}
+
+.information-column > div:last-child {
+    margin-bottom: 0;
+}	
+
+.information-column > div::before {
+	content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 30px;
+    width: 30px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+#info-email::before {
+    background-image: url(../images/email-icon.png);
+}
+
+#info-skype::before {
+    background-image: url(../images/skype-icon.png);
+}
+
+#info-line::before {
+    background-image: url(../images/line-icon.png);
+}
+
+#info-whatsapp::before {
+    background-image: url(../images/whatsapp-icon.png);
+}
+
+.information-column .info-single span {
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.faq-column-single {
+	margin-bottom: 3px;
+}
+
+.faq-column-title {
+    line-height: 1;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+    display: inline-block;
+    color: #283f65;
+}
+
+.faq-title {
+    display: block;
+    background: #283f65;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+    position: relative;
+    cursor: pointer;
+}
+
+.active-faq .faq-title {
+	pointer-events: none;
+}
+
+.active-faq .faq-title::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/opened-faq.png);
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translate(0, -50%);
+}
+
+.faq-title::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/unopened-faq.png);
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translate(0, -50%);
+}
+
+.faq-submenu {
+    padding: 20px;
+}
+
+.faq-sub-single {
+    padding-bottom: 20px;
+}
+
+.faq-sub-single:last-child {
+    padding: 0;
+}
+
+.faq-sub-title {
+    font-weight: bold;
+    display: block;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    padding-left: 20px;
+}
+
+.faq-sub-title::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 10px;
+    border-color: transparent transparent transparent #e31837;
+    transition: 200ms ease-in-out;
+    -webkit-transition: 200ms ease-in-out;
+    -moz-transition: 200ms ease-in-out;
+}
+
+.active-sub-faq .faq-sub-title::before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.faq-sub-content {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+@media (max-width: 800px) {
+
+	.contact-us-container {
+		width: 85%;
+	}
+
+	.faq-column {
+		width: 100%;
+		margin: 0;
+		margin-bottom: 30px;
+		padding: 20px;
+	}
+
+	.information-column {
+		width: 100%;
+		text-align: left;
+		padding: 20px;
+	}
+
+}
+
+@media (min-width: 801px) and (max-width: 1200px) {
+
+	.contact-us-container {
+		width: 95%;
+	}
+	
+	.faq-column {
+		padding: 30px;
+	}
+	
+	.information-column {
+		padding: 30px;
+	}
+
+}

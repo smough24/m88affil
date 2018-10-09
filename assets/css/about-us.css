@@ -1,0 +1,273 @@
+.upper-container {
+    text-align: center;
+    padding: 50px 0;
+    line-height: 1;
+    background-image: url(../images/bg-aboutus.jpg);
+    background-size: cover;
+    color: #fff;
+}
+
+.about-informations {
+    margin: 20px 0 50px;
+}
+
+.about-informations h1 {
+    font-size: 30px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.about-informations p {
+    font-size: 15px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.about-tabs {
+    font-size: 0;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.at-tab {
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    margin: 0 20px;
+    width: calc(25% - 40px);
+}
+
+.at-tab img {
+    user-select: none;
+    -webkit-user-drag: none;
+    width: 100%;
+}
+
+.at-tab.active-tab::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ffcf01;
+    padding: 5px;
+}
+
+.at-tab.active-tab::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 30px 30px 30px;
+    border-color: transparent transparent #a9b6d9 transparent;
+    z-index: 2;
+}
+
+.at-tab span {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;	
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    padding: 10px;
+    box-sizing: border-box;
+	-webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+	user-select: none;
+}
+
+.at-tab.active-tab span {
+    color: #f8cc0f;
+}
+
+.lower-container {
+    background-color: #a9b6d9;
+    padding: 50px 0;
+}
+
+.tab-content {
+    font-size: 0;
+    width: 1000px;
+    margin: 0 auto;
+    display: none;
+    height: 250px;
+    padding: 20px 0;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.tab-content.active-tab-content {
+    display: block;
+}
+
+.tc-left {
+    display: inline-block;
+    width: 40%;
+}
+
+.tc-right {
+    display: inline-block;
+    width: 60%;
+    text-align: center;
+	vertical-align: top;
+}
+
+.tc-title {
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.tc-excerpt {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.tc-inline-contents p {
+    font-size: 19px;
+    line-height: 1;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.tc-inline-contents img {
+    margin: 0 15px;
+    display: inline-block;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.sponsorship-history-div {
+    display: inline-block;
+    width: 25%;
+    position: relative;
+    z-index: 1;
+}
+
+.sponsorship-history-div span {
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+    line-height: 1;
+}
+
+#sponsorships-div {
+    position: relative;
+}
+
+#sponsorships-div:after {
+    content: '';
+    position: absolute;
+    width: 75%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 1px;
+    background: #1a2333;
+    z-index: 0;
+}
+
+@media (max-width: 800px) {
+
+	.at-tab.active-tab::after {
+		display: none;
+	}
+
+	.upper-container {
+		padding: 0;
+	}
+		
+	.about-informations {
+		margin: 0;
+		padding: 50px 30px;
+	}
+
+	.lower-container {
+		padding: 25px 0;
+	}
+
+	.about-tabs {
+		width: 100%;
+		display: table;
+	}
+	
+	.about-informations p {
+		width: auto;
+	}
+	
+	.tab-content {
+		width: auto;
+		height: auto;
+	}
+	
+	.tc-left {
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+	.tc-left img {
+		width: 100%;
+	}
+	
+	.tc-right {
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: 25px 10px;
+		box-sizing: border-box;
+	}
+	
+	.at-tab {
+		width: 25%;
+		margin: 0;
+		padding: 15px 10px;
+		box-sizing: border-box;
+		font-size: 12px;
+		background: #000;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	
+	.at-tab img {
+		display: none;
+	}
+	
+	.at-tab span {
+		position: static;
+		width: 100%;
+		padding: 0;
+		background: transparent;
+	}
+	
+	.at-tab.active-tab::before {
+		top: auto;
+		border: none;
+		border-bottom: 5px solid #f8cc0f;
+		bottom: 0;
+		left: 0;
+		height: 2px;
+		padding: 0;
+	}
+	
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+
+	.tab-content {
+		width: 90%;
+	}
+
+	.about-tabs {
+		width: 90%;
+	}
+
+}

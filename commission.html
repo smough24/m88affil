@@ -5,10 +5,12 @@
 <meta charset="utf-8" />
 <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
 <link rel="shortcut icon" href="assets/images/favicon.ico" />
+<!--<link rel="stylesheet" href="assets/css/footable.standalone.min.css?v=1" />-->
 <link rel="stylesheet" href="assets/css/style.css?v=1" />
 <link rel="stylesheet" href="assets/css/commission.css?v=1" />
 <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script> 
 <script type="text/javascript" src="assets/js/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="assets/js/footable.min.js"></script>
 </head>
 <body>
 <header id="header">
@@ -76,23 +78,23 @@
 				</li>
 			</ul>
 			<p><strong>Double, triple your commission earnings every month from your direct members and your sub-affiliates’ members.</strong></p>
-			<table>
+			<table class="table">
 				<thead>
 					<tr>
 						<th>Commission Structure from direct members Monthly total net profit<br/>
 							<span>(Every caledar month)<br/>
 							(USD or equivalent curency)</span>
 						</th>
-						<th>Every month's number of active members<br/>
+						<th data-breakpoints="xs">Every month's number of active members<br/>
 							<span>(at least one bet in mSports, sports, live dealer,<br/>
 							keno, poker within the qualifying month)</span>
 						</th>
-						<th align="center">Commision percentage rate</th>
+						<th align="center" data-breakpoints="xs">Commision percentage rate</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td>First USD 0 - USD 5,788</td>
+						<td data-expanded="true">First USD 0 - USD 5,788</td>
 						<td>> 5</td>
 						<td>27%</td>
 					</tr>
@@ -189,5 +191,10 @@
 	</div>
 </div>
 <script type="text/javascript" src="assets/js/custom.js"></script> 
+<script>
+$(function($){
+	$('.table').footable();
+});
+</script>
 </body>
 </html>
