@@ -149,6 +149,7 @@
     cursor: pointer;
     position: relative;
     padding-left: 20px;
+	line-height: 1;
 }
 
 .faq-sub-title::before {

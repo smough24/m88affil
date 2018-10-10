@@ -17,7 +17,7 @@ $('.user-meta .login-btn').click(function(){
 		$('.popup-form iframe').attr('src', 'https://aff.m88test.com/g/login');
 	}, 500);
 });
-$('.user-meta .register-btn').click(function(){
+$('.user-meta .register-btn, .register-btn').click(function(){
 	$('body').addClass('active-overlay active-popup-form');
 	$('.popup-form').addClass('register-form');
 	$('.popup-form iframe').attr('src', '');

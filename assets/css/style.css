@@ -72,13 +72,16 @@ h1, h2, h3, h4, h5 {
 	margin: 0;
 	color: #1a2333;
 }
+h1 {
+	margin-bottom: 20px;
+}
 strong {
 	font-family: 'avantgardecedemi';
 }
 p {
 	margin: 0 0 15px;
-	font-size: 20px;
-	line-height: 26px;
+	font-size: 16px;
+	line-height: 20px;
 }
 
 select::-ms-expand {
@@ -383,6 +386,9 @@ select::-ms-expand {
     background: #eaf0ff;
     color: #000;
 }
+.content .footable-details td {
+    background: #f7f7f7;
+}
 .content table th span {
 	font-weight: normal;
 	font-family: avantgardecebook;
@@ -398,7 +404,7 @@ select::-ms-expand {
     line-height: 17px;
 	font-family: 'avantgardecedemi';
 }
-.content table td.footable-first-visible:before {
+.content table.breakpoint td.footable-first-visible:before {
     content: '';
     position: absolute;
     top: 50%;
@@ -783,6 +789,9 @@ select::-ms-expand {
 @media (min-width: 751px) and (max-width: 959px) {
 	body {
 		padding-bottom: 220px;
+	}
+	#container {
+		margin-bottom: 0;
 	}
 	#header #nav a {
 		font-size: 14px;
