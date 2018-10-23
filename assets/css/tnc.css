@@ -84,6 +84,10 @@
     padding-bottom: 20px;
 }
 
+.active-sub-tnc {
+    padding: 0;
+}
+
 .tnc-sub-single:last-child {
     padding: 0;
 }
@@ -120,8 +124,7 @@
 }
 
 .tnc-sub-content {
-    margin-top: 10px;
-	margin-left: 20px;
+    margin: 10px 20px;
 }
 
 @media (max-width: 800px) {
