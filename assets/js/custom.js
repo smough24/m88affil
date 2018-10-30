@@ -73,3 +73,6 @@ $('.tnc-sub-content').slideToggle(0);
 $('.tnc-sub-title').click(function(){
 	$(this).parent().toggleClass('active-sub-tnc').find('.tnc-sub-content').slideToggle(200);
 });
+$(function($){
+	$('.table').footable();
+});
