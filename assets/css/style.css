@@ -93,6 +93,8 @@ select::-ms-expand {
 }
 #header {
 	background: #162741;
+	position: relative;
+	z-index: 1;
 }
 #header .inner {
 	padding: 0 40px;

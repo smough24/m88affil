@@ -19,6 +19,18 @@
     box-sizing: border-box;
 }
 
+.tnc-column table td {
+    position: relative;
+    box-sizing: border-box;
+    height: 60px;
+    padding: 10px;
+    background: #efefef;
+    text-align: center;
+    font-size: 13px;
+    line-height: 17px;
+    font-family: 'avantgardecedemi';
+}
+
 .tnc-column-subinfo {
     width: 90%;
     margin: 0 auto;
@@ -100,6 +112,11 @@
     position: relative;
     padding-left: 20px;
 	line-height: 1;
+}
+
+.sub-con-no-title {
+    display: block !important;
+    margin: 0;
 }
 
 .tnc-sub-title::before {
